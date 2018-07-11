@@ -12,6 +12,86 @@ body {
 	height: 90px;	/*height: 110px;*/
 	border-radius: 5px;
 }
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+	margin: 0px !important;
+}
+.affix + .container-fluid {
+	padding-top: 70px;
+}
+/* ============ NAVIGATION SECTION ============ */
+nav {
+	margin: 5px;
+}
+#navCollapse ul {       
+	background-color: #000;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+}
+#navCollapse ul li a {       
+	font-family: Arial;
+	padding: .2em 1em;
+	color: #fff;
+	background-color: #000;
+}
+#navCollapse ul li a.active {
+    color: #000;
+	background-color: #5c755e;
+}
+#navCollapse ul li a:hover:not(.active) {
+    color: #000;
+	background-color: #fff;
+}
+/* Changing the breakpoint of hamburger icon to 992px */
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0px;
+        border-width: 0px 0px 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display: block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0px;
+       background-color: transparent;
+       border: 0px;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+}
 /* ============ HEADINGS SECTION ============ */
 /*For header*/
 h3 {
