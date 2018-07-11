@@ -42,7 +42,16 @@
 					</ul>      
 				</div>
 			</div>  
-		</nav>  
+		</nav> 
+		<!-- This is the footer section -->
+		<div id="footer">
+			<ul>
+				<li><a href="">About SMS</a></li>
+				<li><a href="">Help</a></li>
+				<li><a href="">Contact Us</a></li>	 
+			</ul>
+			&copy; 2018 sms.com.  All Rights Reserved.
+		</div> 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="assets/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
