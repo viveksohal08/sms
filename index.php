@@ -72,9 +72,39 @@
 			<div class="row">
 				<div class="col-xs-10 col-xs-offset-1">
 					<div class="main">
-						
-
-
+						<?php
+							include "db_handler.php";
+							if(isset($_POST['submit'])){
+								$sid = $_POST['sid'];	
+								$sql = "SELECT * FROM student WHERE id = $sid";
+								$result = mysqli_query($conn, $sql);
+								if (mysqli_num_rows($result) > 0) {
+								    //Output data of each row
+								    echo "<h1>Your details are: </h1>";
+								    echo "<table id='theTable' class='table table-striped table-bordered'>
+								    <tr>
+								    <th>Id</th>
+								    <th>Firstname</th>
+								    <th>Lastname</th>
+								    <th>Standard</th>
+								    <th>Roll number</th>
+								    <th>Image</th>
+								    </tr>
+								    ";
+								    while($row = mysqli_fetch_assoc($result)) {
+								        echo "<tr><td>" . $row["id"] . "</td><td>" . 
+								        $row["firstname"] . "</td><td>" . $row["lastname"] .
+								        "</td><td>" . $row["standard"] . "</td><td>" . 
+								        $row["rollno"] . "</td><td>" . $row["image"] .
+								        "</td></tr>";
+								    }
+							    	echo "</table>";
+								} else {
+							    	echo "No results to show.";
+								}
+								mysqli_close($conn);
+							}
+						?>		
 					</div>
 				</div>
 			</div>
