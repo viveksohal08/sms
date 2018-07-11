@@ -42,7 +42,29 @@
 					</ul>      
 				</div>
 			</div>  
-		</nav> 
+		</nav>
+		<!-- This is the main section -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<!-- main is used to add our own styling -->
+					<div class="main" id="firstMain">	
+						
+
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="main">
+						
+
+
+					</div>
+				</div>
+			</div>
+		</div> 
 		<!-- This is the footer section -->
 		<div id="footer">
 			<ul>
