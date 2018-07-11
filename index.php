@@ -12,7 +12,7 @@
 	</head>
 	<body>
 		<!-- This is the header section -->
-		<div class="container-fluid" id="header" style="padding-left: 5px;">	 
+		<div class="container-fluid" id="header">	 
 		<!-- Add logo and heading in this section -->
 			<a href="index.php"><img id="logo" src="images/logo.jpg" alt="Logo" /></a>
 			<h3>Student Management</h3>		 
@@ -49,9 +49,23 @@
 				<div class="col-xs-10 col-xs-offset-1">
 					<!-- main is used to add our own styling -->
 					<div class="main" id="firstMain">	
-						
-
-
+						<h2>Fill out the form below and click "Search".</h2>
+						<p align="center">The field marked in red is compulsory.</p>
+						<div align="center">
+							<form id="theForm" action="index.php" method="POST" onsubmit="return validateForm();">
+								<p>
+									<div class="row">
+										<label for="id">Id:&nbsp;</label>
+										<input type="number" id="id" name="sid" placeholder="Enter id" />
+										<span class="asterisk"> *</span>
+									</div>
+									<br />
+									<div class="row">
+										<input type="submit" value="Search" name="submit" />
+									</div>
+								</p>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -78,6 +92,6 @@
 		<script src="assets/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bootstrap/js/bootstrap.min.js"></script>
-		</script>
+		<script src="js/form.js"></script>
 	</body>
 </html>
