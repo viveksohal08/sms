@@ -104,6 +104,43 @@ nav {
 	margin-top: -15px;
 	margin-bottom: 5px;
 }
+/* ============ FORM SECTION ============ */
+#theForm {
+	color: black;
+	display: table;
+	padding: 20px;
+	background-color: #2C8F77;
+	border: solid 2px black;
+	margin-bottom: 10px;
+}
+#theForm .row {
+	display: table-row;
+}
+#theForm .row input {
+	display: table-cell;
+	padding: 2px;
+}
+#theForm .row label {
+	display: table-cell;
+	padding: 2px;
+	text-align: right;
+}
+#theForm .row input:focus {
+	background-color: yellow;
+}
+#theForm .asterisk{
+	color: #FF0000;
+}
+#theForm input[type="submit"]{
+	background-color: beige;
+	border: none;
+	color: black;
+	padding: 8px 16px;
+	cursor: pointer;
+	position: relative;
+	left: 140px;
+	border-radius: 5px;
+}
 /* ============ FOOTER SECTION ============ */
 #footer {
 	background-color: #5c755e;
@@ -152,6 +189,12 @@ h3 {
 	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
+h2 {
+	margin-top: 0px;
+	font-size: 120%;
+	color: darkblue;
+	text-align: center;
+} 
 #logo {
     max-height: 100%;
     max-width: 100%;
