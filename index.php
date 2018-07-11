@@ -17,6 +17,32 @@
 			<a href="index.php"><img id="logo" src="images/logo.jpg" alt="Logo" /></a>
 			<h3>Student Management</h3>		 
 		</div>
+		<!-- This is the navigation section -->
+		<nav class="navbar navbar-default" data-spy="affix" data-offset-top="100">	<!-- navbar-inverse -->
+			<!-- Following container-fluid is a block element(match_parent) -->
+			<div class="container-fluid">	
+				<!-- Adds a logo/name to navbar and hamburger icon-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navCollapse">
+						<!-- To collapse the navbar using hamburger icon -->
+						<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+					</button>
+					<!-- Logo/name -->
+					<a class="navbar-brand" href="index.php">SMS</a>	<!-- Logo is always to the left -->
+				</div>
+				<div class="collapse navbar-collapse" id="navCollapse">
+					<!-- Navbar buttons -->
+					<ul class="nav navbar-nav">
+						<li><a href="index.php" class="active">Home</a></li>
+					</ul>
+					<!-- Glyphicons -->
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Contact Us</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Admin Login</a></li>
+					</ul>      
+				</div>
+			</div>  
+		</nav>  
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="assets/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
