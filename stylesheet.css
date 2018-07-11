@@ -92,11 +92,22 @@ nav {
        box-shadow: none;
     }
 }
+/* ============ MAIN SECTION ============ */
+.main {
+	background-color: #e5e4d7;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 110%;
+}
+/* ============ GRID SECTION ============ */
+#firstMain {
+	margin-top: -15px;
+	margin-bottom: 5px;
+}
 /* ============ FOOTER SECTION ============ */
 #footer {
 	background-color: #5c755e;
 	margin: 5px;
-	margin-top: -15px;
 	height: 90px;
 	clear: both;
 	border-radius: 5px;
