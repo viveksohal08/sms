@@ -126,7 +126,7 @@ nav {
 	text-align: right;
 }
 #theForm .row input:focus {
-	background-color: yellow;
+	background-color: lightgrey;
 }
 #theForm .asterisk{
 	color: #FF0000;
@@ -139,6 +139,43 @@ nav {
 	cursor: pointer;
 	position: relative;
 	left: 140px;
+	border-radius: 5px;
+}
+
+#theLoginForm {
+	color: black;
+	display: table;
+	padding: 20px;
+	background-color: #2C8F77;
+	border: solid 2px black;
+	margin-bottom: 10px;
+}
+#theLoginForm .row {
+	display: table-row;
+}
+#theLoginForm .row input {
+	display: table-cell;
+	padding: 2px;
+}
+#theLoginForm .row label {
+	display: table-cell;
+	padding: 2px;
+	text-align: right;
+}
+#theLoginForm .row input:focus {
+	background-color: lightgrey;
+}
+#theLoginForm .asterisk{
+	color: #FF0000;
+}
+#theLoginForm input[type="submit"]{
+	background-color: beige;
+	border: none;
+	color: black;
+	padding: 8px 16px;
+	cursor: pointer;
+	position: relative;
+	left: 170px;
 	border-radius: 5px;
 }
 /* ============ TABLE SECTION ============ */
