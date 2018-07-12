@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(isset($_SESSION['user_id'])){
+		header('Location: admin_dashboard.php');	
+	}
+	else{
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -60,7 +68,9 @@
 									<div class="row">
 										<label for="id">Username:&nbsp;</label>
 										<input type="text" id="username" name="username"
-										placeholder="Enter username" />
+										placeholder="Enter username" value="<?php 
+										if(isset($_POST['submit']))
+											echo htmlentities($_POST['username']);?>" />
 										<span class="asterisk"> *</span>
 									</div>
 									<br />
